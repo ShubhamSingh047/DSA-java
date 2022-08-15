@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Palindrome {
+    public static boolean checkPalindrome(int n){
+        int temp = n;
+        int rev=0;
+        while(temp>0) {
+            rev = rev * 10 + temp % 10;
+            temp = temp / 10;
+        }
+        return (rev==n);
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        boolean result = checkPalindrome(num);
+        System.out.println(result);
+    }
+}
