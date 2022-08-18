@@ -7,9 +7,10 @@ public class Check_Prime {
             result= false;
         }else{
             for(int i=2; i*i<=n; i++){
-                if(n%i==0)
-                    result=false;
+                if(n%i==0) {
+                    result = false;
                     break;
+                }
             }
         }
         return result;
