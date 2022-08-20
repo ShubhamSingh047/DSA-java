@@ -8,7 +8,11 @@ public class Sieve_Eratorthencs {
         }
         for (int i=2; i<=n; i++){
             if(arr1[i]){
-
+                System.out.println(i);
+            }
+            for (int j = i*i; j<=n; j=j+i){
+                System.out.println(j+" value of j");
+                arr1[j]=false;
             }
         }
     }
