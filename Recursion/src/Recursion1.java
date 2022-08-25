@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Recursion1 {
+public class Recursion1 {
+    public static void main(String[] args) {
+
+    }
 }
